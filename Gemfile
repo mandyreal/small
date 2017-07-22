@@ -8,7 +8,6 @@ end
 
 
 gem 'rails', '~> 5.1.2'
-gem 'rails-api'
 gem 'active_model_serializers'
 gem 'devise'
 gem 'pg', '~> 0.18'
@@ -20,6 +19,7 @@ gem 'turbolinks', '~> 5'
 
 
 group :development, :test do
+  gem 'listen'
   gem 'faker'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'web-console'
