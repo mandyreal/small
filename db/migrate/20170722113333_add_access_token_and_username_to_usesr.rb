@@ -1,6 +1,6 @@
 class AddAccessTokenAndUsernameToUsesr < ActiveRecord::Migration[5.1]
   def change
-    add_column :usesrs, :access_token, :string,
-    add_column :usesrs, :username, :string
+    add_column :users, :access_token, :string
+    add_column :users, :username, :string
   end
 end
