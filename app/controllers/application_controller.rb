@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
 	include AbstractController::Translation
 
-	before_action :authenricate_user_from_token!
+	skip_before_action :authenricate_user_from_token!, raise: false
 
 	respond_to :json
 
